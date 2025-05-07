@@ -42,4 +42,10 @@ jobs:
         name: pytest-results
         path: result.log
 
-  
+  badge:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Generate badge (placeholder step)
+      run: echo "Badge generated via GitHub UI."
+
